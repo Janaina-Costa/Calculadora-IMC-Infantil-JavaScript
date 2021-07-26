@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="IMC.css">
+    <script src="IMC.js"></script>
+    <title>Calculadora IMC Infantil</title>
+</head>
+<body>
+    <div id="container">
+        <div id="calculadora">
+            <p id="titulo">Indice de Massa Corporal Infantil - 06 a 15 anos</p> 
+        <table cellspacing='10' cellpadding = '8'>
+        <tr>
+            <td>Peso(Kg): </td>
+            
+            <td colspan="2"><input type="number" id="peso" min="1" placeholder="Digite o peso em Kg" value=""></td>
+        </tr>
+        <tr>
+            <td>Altura(cm): </td>
+            <td colspan="2"><input type="number" id="altura" min="0" placeholder='Digite a altura em cm' value=""></td>
+        </tr>    
+        
+        <tr>
+            <td>Sexo: </td>
+            <td id="genero"> 
+                <input type="radio" id="masculino" name="op" checked> M
+                <input type="radio" id="feminino" name="op"> F 
+            </td>
+            
+        </tr>
+        <tr>
+           <td>Idade: </td>
+           <td>
+                <input type="number" name="" id="idade" max="15" min="6" value="6">
+           </td>
+        </tr>
+         </table>
+         <div id="botoes">
+            <button id="calcular" onclick="resultado()">CALCULAR IMC INFANTIL</button><br><br>
+            <p id="res">Resultado</p>
+            
+         </div>
+        
+         <div id="limpa">
+            
+             <button id="limpa" onclick="clean()">Limpar Valores</button>
+         </div>
+         <footer >&copy; Janaina's Dev</footer>
+        
+    </div>
+       
+    </div>
+</body>
+</html>
